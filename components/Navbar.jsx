@@ -24,7 +24,7 @@ const Navbar = () => {
                 height='50'
             />
             <div>
-                <ul className='hidden md:flex'>
+                <ul className='hidden md:flex pr-4'>
                     <Link href='/'>
                         <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                     </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
                         <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
                     </Link>
                 </ul>
-                <div onClick={handleNav} className='md:hidden'>
+                <div onClick={handleNav} className='md:hidden pr-4'>
                     <AiOutlineMenu size={25} />
                 </div>
             </div>
