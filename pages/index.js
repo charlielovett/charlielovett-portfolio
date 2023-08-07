@@ -2,7 +2,7 @@ import Main from '@/components/Main'
 import Head from 'next/head'
 import Image from 'next/image'
 import About from '@/pages/about'
-import Skills from '@/components/Skills'
+import Skills from '@/pages/skills'
 import Contact from '@/components/Contact'
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
-      <Skills />
       <Contact />
     </div>
   )
