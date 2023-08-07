@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectItem from './ProjectItem';
+import ProjectItem from '../components/ProjectItem';
 
 {/*images*/}
 import alcoholImg from '../public/assets/projects/303-2.png';
@@ -16,9 +16,9 @@ const Projects = () => {
   return (
     <div id='projects' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
-            <h2> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Projects </span></h2>
+            <h2 className='pt-16'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Projects </span></h2>
             <p className='py-2 text-gray-600'>Showcase of my work in software development and data analysis.</p>
-            <div className='grid md:grid-cols-2 gap-8'>
+            <div className='grid md:grid-cols-3 gap-8'>
 
                 <ProjectItem
                     title='Alcohol-Related Mortality | Data Analysis'

@@ -7,9 +7,9 @@ import React, { useEffect, useState } from 'react'
 const ProjectItem = ({projUrl, title, description, icons, projImage}) => {
     return (
         <Link href={projUrl}>
-            <div className='relative flex flex-col items-left justify-center h-auto w-full rounded-xl p-4 scale-[.95] hover:scale-[.97] hover:cursor-pointer transition-transform duration-100 border border-gray-300 group'>
+            <div className='relative flex flex-col items-left justify-center h-auto w-full rounded-xl p-4 scale-[.98] hover:scale-[1] hover:cursor-pointer transition-transform duration-100 border border-gray-300 group'>
                 <h3>{title}</h3>
-                <p className='py-2 text-[16px] leading-[24px] h-[90px] text-gray-600'>{description}</p>
+                <p className='py-2 text-gray-600'>{description}</p>
                     <div className='flex'>
                         {icons.map((Icon, index) => (
                             <Icon key={index} className='mx-1' size={25} />
