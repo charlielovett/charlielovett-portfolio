@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import About from '@/pages/about'
 import Skills from '@/pages/skills'
-import Contact from '@/components/Contact'
+import Contact from '@/pages/contact'
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
-      <Contact />
     </div>
   )
 }
