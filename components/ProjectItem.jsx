@@ -1,20 +1,28 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
+import React, { useEffect, useState } from 'react'
 
-const ProjectItem = ({title, backgroundImg, projectUrl, method}) => {
-  return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-gray-900 to-gray-800'>
-                    <Image className='rounded-xl group-hover:opacity-10 ease-in duration-100' src={backgroundImg} alt='/' />
-                    <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                        <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
-                        <p className='pb-4 pt-2 text-white text-center'>{method}</p>
-                        <Link href={projectUrl}>
-                          <p className='text-center py-3 roudned-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>More Info</p>
-                        </Link>
-                    </div>
+
+
+const ProjectItem = ({projUrl, title, description, icons, projImage}) => {
+    return (
+        <Link href={projUrl}>
+            <div className='relative flex flex-col items-left justify-center h-auto w-full rounded-xl p-4 scale-[.95] hover:scale-[.97] hover:cursor-pointer transition-transform duration-100 border border-gray-300 group'>
+                <h3>{title}</h3>
+                <p className='py-2 text-[16px] leading-[24px] h-[90px] text-gray-600'>{description}</p>
+                    <div className='flex'>
+                        {icons.map((Icon, index) => (
+                            <Icon key={index} className='mx-1' size={25} />
+                        ))}
+                        </div>
+                <Image className='w-full rounded-xl my-3'
+                    src={projImage}
+                    alt='/'
+                    />
+                <p>See more &rarr;</p>
+                <div className='w-[15%] h-1 bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-300'></div>
                 </div>
-  )
-}
-
+            </Link>
+    )
+  }
 export default ProjectItem
