@@ -3,12 +3,14 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
+const linkedInLink = 'https://linkedin.com/in/charlie-lovett';
+const gitHubLink = 'https://github.com/charlielovett';
+
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
-                <p className='uppercase text-sm tracking-widest text-gray-600'>Lorem Ipsum</p>
                 <h1 className='py-4 text-gray-700'>
                     Hi, I&#39;m <span className='text-[#5651e5]'>Charlie</span>
                 </h1>
@@ -23,18 +25,21 @@ const Main = () => {
                     and track events on Northwestern&#39;s campus.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaLinkedinIn />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaGithub />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <AiOutlineMail />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonLinesFill />
-                    </div>
+                    <a href={linkedInLink} target='_blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaLinkedinIn size={20}/>
+                        </div>
+                    </a>
+                    <a href={gitHubLink} target='_blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaGithub size={20}/>
+                        </div>
+                    </a > 
+                    <a href='mailto:colovett@gmail.com' target='_blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <AiOutlineMail size={20}/>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

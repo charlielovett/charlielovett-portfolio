@@ -10,17 +10,15 @@ const Contact = () => {
     <div id='contact' className='w-full lg:h-screen'>
         <div className='max-2-[1240px] m-auto px-2 py-16 w-full'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
-            <h2 className='py-4'>Get In Touch</h2>
             <div className='grid lg:grid-cols-5 gap-8'>
 {/*left*/}
-                <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
-                    <div className='lg:p-4 h-full rounded-xl'>
-                        <div>
+                <div className='col-span-3 lg:col-span-2 w-full lg:h-1/2 shadow-xl shadow-gray-400 rounded-xl p-4'>
+                    <div className='flex flex-col h-full justify-between lg:p-4 rounded-xl'>
+                        <div className='flex-grow'>
                             <h2 className='py-2'>Charlie Lovett</h2>
-                            <p>Student and Software Developer</p>
-                            <p className='py-4'>Reach out for inquiries</p>
+                            <p className='py-4'>You can reach me by email at colovett@gmail.com or the following form</p>
                         </div>
-                        <div>
+                        <div className='bottom-div'>
                             <p className='uppercase pt-8'>Connect with me</p>
                             <div className='flex items-center justify-between py-4'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
@@ -84,10 +82,11 @@ const Contact = () => {
                 </div>
             </div>
             <div className='flex justify-center py-12'>
-                <Link href='/' />
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
-                </div>
+                <Link href='/'>
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                        <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
+                    </div>
+                </Link>
             </div>
         </div>
     </div>
