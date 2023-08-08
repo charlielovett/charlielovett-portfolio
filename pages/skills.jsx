@@ -1,5 +1,12 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import SkillItem from '@/components/SkillItem';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { BiLogoCss3, BiLogoJavascript, BiLogoPython, BiLogoTailwindCss, BiLogoReact} from 'react-icons/bi';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { SiRstudio } from 'react-icons/si';
+
+
+'/../public/assets/skills/html.png';
 
 const Skills = () => {
   return (
@@ -9,112 +16,30 @@ const Skills = () => {
             <p className='py-4 text-gray-600'>What I can do.</p>
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
 
-                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                        <div className='m-auto'>
-                            <Image
-                                src='/../public/assets/skills/html.png'
-                                alt='/'
-                                width='64'
-                                height='64'/>
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3>HTML</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                        <div className='m-auto'>
-                            <Image
-                                src='/../public/assets/skills/css.png'
-                                alt='/'
-                                width='64'
-                                height='64'/>
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3>CSS</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                        <div className='m-auto'>
-                            <Image
-                                src='/../public/assets/skills/javascript.png'
-                                alt='/'
-                                width='64'
-                                height='64'/>
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3>JavaScript</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                        <div className='m-auto'>
-                            <Image
-                                src='/../public/assets/skills/nextjs.png'
-                                alt='/'
-                                width='64'
-                                height='64'/>
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3>Next.js</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                        <div className='m-auto'>
-                            <Image
-                                src='/../public/assets/skills/python.png'
-                                alt='/'
-                                width='64'
-                                height='64'/>
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3>Python</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                        <div className='m-auto'>
-                            <Image
-                                src='/../public/assets/skills/R.png'
-                                alt='/'
-                                width='64'
-                                height='64'/>
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3>R</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                        <div className='m-auto'>
-                            <Image
-                                src='/../public/assets/skills/tailwind.png'
-                                alt='/'
-                                width='64'
-                                height='64'/>
-                        </div>
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3>TailwindCSS</h3>
-                        </div>
-                    </div>
-                </div>
-
-
+                <SkillItem
+                    skill='HTML'
+                    skillIcon={<AiFillHtml5 size={50}/>}/>
+                <SkillItem
+                    skill='CSS'
+                    skillIcon={<BiLogoCss3 size={50}/>}/>
+                <SkillItem
+                    skill='JavaScript'
+                    skillIcon={<BiLogoJavascript size={50}/>}/>
+                <SkillItem
+                    skill='React.js'
+                    skillIcon={<BiLogoReact size={50}/>}/>
+                <SkillItem
+                    skill='Next.js'
+                    skillIcon={<TbBrandNextjs size={50}/>}/>
+                <SkillItem
+                    skill='Python'
+                    skillIcon={<BiLogoPython size={50}/>}/>
+                <SkillItem
+                    skill='R'
+                    skillIcon={<SiRstudio size={50}/>}/>
+                <SkillItem
+                    skill='TailwindCSS'
+                    skillIcon={<BiLogoTailwindCss size={50}/>}/>
 
             </div>
         </div>
