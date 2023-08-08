@@ -20,7 +20,7 @@ const ProjectItem = ({projUrl, title, description, icons, projImage}) => {
                     alt='/'
                     />
                 <p>See more &rarr;</p>
-                <div className='w-full h-1 bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-300'></div>
+                <div className='w-full h-1 bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-300'></div>
                 </div>
             </Link>
     )
