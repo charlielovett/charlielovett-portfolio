@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto w-full sm:px-16 px-8'>
-            <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Contact</span></h1>
+            <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-cl-orange to-cl-yellow text-black'>Contact</span></h1>
             <div className='grid lg:grid-cols-5 gap-8 pt-8'>
 {/*left*/}
                 <div className='col-span-3 lg:col-span-2 w-full border border-gray-300 lg:h-1/2 rounded-xl p-4'>
@@ -71,7 +71,7 @@ const Contact = () => {
                                 </div>
 
                             </div>
-                            <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
+                            <button className='w-full p-4 mt-4'>Send Message</button>
                         </form>
                     </div>
                 </div>

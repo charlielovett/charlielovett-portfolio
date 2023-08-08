@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] mx-auto sm:px-16 px-8'>
-            <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Skills</span></h1>
+            <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-cl-orange to-cl-yellow text-black'>Skills</span></h1>
             <p className='py-4 text-gray-600'>What I can do.</p>
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
 

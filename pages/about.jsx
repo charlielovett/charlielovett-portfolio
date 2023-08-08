@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className='max-w-[1240px] mx-auto sm:px-16 px-8'>
             <h2 className='pt-[100px]'> <span className='text-black'>About</span></h2>
-            <h1 className='py-2'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Charlie Lovett</span></h1>
+            <h1 className='py-2'> <span className='bg-gradient-to-r from-cl-orange to-cl-yellow text-black'>Charlie Lovett</span></h1>
             <div className='mt-4' data-fade='2'>
                 <Image
                     className='float-right ml-6 w-40 md:w-72 rounded-md'
