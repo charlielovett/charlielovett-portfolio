@@ -10,26 +10,10 @@ const gitHubLink = 'https://github.com/charlielovett';
 
 const Navbar = () => {
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState('white');
     const [highlight, setHighlight] = useState('home')
-    const [linkColor, setLinkColor] = useState('#1f2937');
     const router = useRouter();
 
     useEffect(() => {
-        // sets nav color for project pages
-        if (
-            router.asPath === '/alcohol' ||
-            router.asPath === '/alcohol' ||
-            router.asPath === '/alcohol' ||
-            router.asPath === '/alcohol'
-        ) {
-            setNavBg('transparent');
-            setLinkColor('white');
-        } else {
-            setNavBg('white');
-            setLinkColor('#1f2937');
-        }
-
         // sets nav highlights
         if (router.asPath === '/') {
             setHighlight('home')
@@ -41,6 +25,8 @@ const Navbar = () => {
             setHighlight('about')
         } else if (router.asPath === '/contact') {
             setHighlight('contact')
+        } else if (router.asPath === '/alcohol') {
+            setHighlight('projects')
         }
     }, [router])
 
@@ -58,16 +44,15 @@ const Navbar = () => {
 
   return (
     <div
-        style={{backgroundColor: `${navBg}`}}
         className={
             shadow
-                ? 'fixed w-full h-20 shadow-xl z-[100]'
-                : 'fixed w-full h-20 z-[100]'
+                ? 'fixed w-full h-20 shadow-xl z-[100] bg-white'
+                : 'fixed w-full h-20 z-[100] bg-white'
         }
     >
         <div className='flex justify-between items-center w-full h-full ml-50 scale-90 sm:scale-100'>
             <div>
-                <ul style={{color: `${linkColor}`}} className='flex'>
+                <ul className='flex text-black'>
                     <Link href='/'>
                         <li
                             className={
