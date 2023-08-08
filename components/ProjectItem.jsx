@@ -15,9 +15,12 @@ const ProjectItem = ({projUrl, title, description, icons, projImage}) => {
                             <Icon key={index} className='mx-1' size={25} />
                         ))}
                         </div>
-                <Image className='w-full rounded-xl my-3'
+                <Image className='w-full rounded-xl my-3 border border-gray-400'
                     src={projImage}
                     alt='/'
+                    width={1000}
+                    height={500}
+                    layout='responsive'
                     />
                 <p>See more &rarr;</p>
                 <div className='w-full h-1 bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-300'></div>
