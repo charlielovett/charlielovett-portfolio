@@ -12,7 +12,7 @@ const Main = () => {
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
                 <h1 className='py-4 text-gray-700'>
-                    Hi, I&#39;m <span className='text-[#5651e5]'>Charlie</span>
+                    Hi, I&#39;m <span className='bg-gradient-to-r from-cl-orange to-cl-yellow'>Charlie</span>
                 </h1>
                 <h1 className='py-2 text-gray-700'>
                     A Student and Software Developer

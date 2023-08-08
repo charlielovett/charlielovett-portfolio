@@ -9,13 +9,14 @@ const linkedInLink = 'https://linkedin.com/in/charlie-lovett';
 const gitHubLink = 'https://github.com/charlielovett';
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
     const [navBg, setNavBg] = useState('white');
+    const [highlight, setHighlight] = useState('home')
     const [linkColor, setLinkColor] = useState('#1f2937');
     const router = useRouter();
 
     useEffect(() => {
+        // sets nav color for project pages
         if (
             router.asPath === '/alcohol' ||
             router.asPath === '/alcohol' ||
@@ -28,11 +29,21 @@ const Navbar = () => {
             setNavBg('white');
             setLinkColor('#1f2937');
         }
+
+        // sets nav highlights
+        if (router.asPath === '/') {
+            setHighlight('home')
+        } else if (router.asPath === '/projects') {
+            setHighlight('projects')
+        } else if (router.asPath === '/skills') {
+            setHighlight('skills')
+        } else if (router.asPath === '/about') {
+            setHighlight('about')
+        } else if (router.asPath === '/contact') {
+            setHighlight('contact')
+        }
     }, [router])
 
-    const handleNav = () => {
-        setNav(!nav)
-    }
 
     useEffect(() => {
         const handleShadow = () => {
@@ -54,46 +65,55 @@ const Navbar = () => {
                 : 'fixed w-full h-20 z-[100]'
         }
     >
-        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-            <Link href='/'>
-                <Image
-                    src="/../public/assets/navbar-logo.png"
-                    alt="/"
-                    width='125'
-                    height='50'
-                />
-            </Link>
+        <div className='flex justify-between items-center w-full h-full ml-50 scale-90 sm:scale-100'>
             <div>
-                <ul style={{color: `${linkColor}`}} className='hidden md:flex pr-4'>
+                <ul style={{color: `${linkColor}`}} className='flex'>
                     <Link href='/'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
+                        <li
+                            className={
+                                (highlight === 'home')
+                                ? 'ml-5 text-sm font-semibold bg-gradient-to-r from-cl-orange to-cl-yellow'
+                                : 'ml-5 text-sm font-semibold hover:bg-cl-orange/25 ease-in duration-50'
+                            }>Home</li>
                     </Link>
                     <Link href='/projects'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
+                        <li
+                            className={
+                                (highlight === 'projects')
+                                ? 'ml-5 text-sm font-semibold bg-gradient-to-r from-cl-orange to-cl-yellow'
+                                : 'ml-5 text-sm font-semibold hover:bg-cl-orange/25 ease-in duration-50'
+                            }>Projects</li>
                     </Link>
                     <Link href='/skills'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
+                        <li
+                            className={
+                                (highlight === 'skills')
+                                ? 'ml-5 text-sm font-semibold bg-gradient-to-r from-cl-orange to-cl-yellow'
+                                : 'ml-5 text-sm font-semibold hover:bg-cl-orange/25 ease-in duration-50'
+                            }>Skills</li>
                     </Link>
                     <Link href='/about'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
+                        <li
+                            className={
+                                (highlight === 'about')
+                                ? 'ml-5 text-sm font-semibold bg-gradient-to-r from-cl-orange to-cl-yellow'
+                                : 'ml-5 text-sm font-semibold hover:bg-cl-orange/25 ease-in duration-50'
+                            }>About</li>
                     </Link>
                     <Link href='/contact'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
+                        <li
+                            className={
+                                (highlight === 'contact')
+                                ? 'ml-5 text-sm font-semibold bg-gradient-to-r from-cl-orange to-cl-yellow'
+                                : 'ml-5 text-sm font-semibold hover:bg-cl-orange/25 ease-in duration-50'
+                            }>Contact</li>
                     </Link>
                 </ul>
-                <div onClick={handleNav} className='md:hidden pr-4'>
-                    <AiOutlineMenu size={25} />
-                </div>
             </div>
         </div>
-    <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+    {/* <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div
-            className={
-                nav
-                    ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500'
-                    : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
-            }
-        >
+            className='fixed left-[-100%] top-0 p-10 ease-in duration-500'>
             <div>
                 <div className='flex w-full items-center justify-between border-b border-gray-300 py-4'>
                     <Link href='/'>
@@ -148,7 +168,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
     </div>
   )
 }
