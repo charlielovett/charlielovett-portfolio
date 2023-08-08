@@ -21,7 +21,7 @@ const Projects = () => {
             <div className='grid md:grid-cols-3 gap-8'>
 
                 <ProjectItem
-                    title='Alcohol-Related Mortality | Data Analysis'
+                    title='Effects of Alcoholism | Data Analysis'
                     description={'A logistic regression model which assesses global alcohol-attributable mortality rates. Final project for STAT 303-2 at Northwestern University.'}
                     projImage={alcoholImg}
                     icons={[FaPython, SiPandas, SiNumpy]}

@@ -18,7 +18,7 @@ const Main = () => {
                     A Student and Software Developer
                 </h1>
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                    I am a student and Northwestern University studying 
+                    I am a student at Northwestern University studying 
                     computer science and data science. Currently, I am 
                     focused on expanding my programming skillset while 
                     building a responsive web application which will manage 
