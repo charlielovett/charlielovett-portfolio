@@ -21,13 +21,13 @@ const Contact = () => {
                         <div className='bottom-div'>
                             <p className='uppercase pt-8'>Connect with me</p>
                             <div className='flex items-left py-4 space-x-8'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                <div className='rounded-full ring-4 ring-cl-orange p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <FaLinkedinIn />
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                <div className='rounded-full ring-4 ring-cl-orange p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <FaGithub />
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                <div className='rounded-full ring-4 ring-cl-orange p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <AiOutlineMail />
                                 </div>
                             </div>

@@ -26,17 +26,17 @@ const Main = () => {
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <a href={linkedInLink} target='_blank'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                        <div className='rounded-full ring-4 ring-cl-orange m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <FaLinkedinIn size={20}/>
                         </div>
                     </a>
                     <a href={gitHubLink} target='_blank'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                        <div className='rounded-full ring-4 ring-cl-orange m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <FaGithub size={20}/>
                         </div>
                     </a > 
                     <a href='mailto:colovett@gmail.com' target='_blank'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                        <div className='rounded-full ring-4 ring-cl-orange m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <AiOutlineMail size={20}/>
                         </div>
                     </a>

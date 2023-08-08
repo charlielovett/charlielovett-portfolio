@@ -28,6 +28,6 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black hover:scale-105 ease-in duration-300
   }
 }
