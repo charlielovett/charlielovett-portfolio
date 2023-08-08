@@ -8,11 +8,11 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
-        <div className='max-w-[1240px] m-auto px-2 w-full'>
-            <h2 className='pt-[100px]'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Contact</span></h2>
+        <div className='max-w-[1240px] m-auto w-full sm:px-16 px-8'>
+            <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Contact</span></h1>
             <div className='grid lg:grid-cols-5 gap-8 pt-8'>
 {/*left*/}
-                <div className='col-span-3 lg:col-span-2 w-full lg:h-1/2 shadow-xl shadow-gray-400 rounded-xl p-4'>
+                <div className='col-span-3 lg:col-span-2 w-full border border-gray-300 lg:h-1/2 rounded-xl p-4'>
                     <div className='flex flex-col h-full justify-between lg:p-4 rounded-xl'>
                         <div className='flex-grow'>
                             <h2 className='py-2'>Charlie Lovett</h2>
@@ -20,7 +20,7 @@ const Contact = () => {
                         </div>
                         <div className='bottom-div'>
                             <p className='uppercase pt-8'>Connect with me</p>
-                            <div className='flex items-center justify-between py-4'>
+                            <div className='flex items-left py-4 space-x-8'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <FaLinkedinIn />
                                 </div>
@@ -30,15 +30,12 @@ const Contact = () => {
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <AiOutlineMail />
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <BsFillPersonLinesFill />
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 {/*right*/}    
-                <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+                <div className='col-span-3 w-full h-auto border border-gray-300 rounded-xl mb-4 lg:p-4'>
                     <div className='p-4'>
                         <form>
                             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
@@ -76,17 +73,8 @@ const Contact = () => {
                             </div>
                             <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
                         </form>
-
                     </div>
-
                 </div>
-            </div>
-            <div className='flex justify-center py-12'>
-                <Link href='/'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
-                    </div>
-                </Link>
             </div>
         </div>
     </div>

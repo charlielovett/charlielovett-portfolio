@@ -15,8 +15,8 @@ import { SiScikitlearn } from 'react-icons/si';
 const Projects = () => {
   return (
     <div id='projects' className='w-full'>
-        <div className='max-w-[1240px] mx-auto'>
-            <h2 className='pt-[100px]'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Projects</span></h2>
+        <div className='max-w-[1240px] mx-auto sm:px-16 px-8'>
+            <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Projects</span></h1>
             <p className='py-4 text-gray-600'>Showcase of my work in software development and data analysis.</p>
             <div className='grid md:grid-cols-3 gap-8'>
 

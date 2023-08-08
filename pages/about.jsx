@@ -4,10 +4,10 @@ import Image from 'next/image'
 const About = () => {
   return (
     <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
-        <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-            <div className='col-span-2'>
+        <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8  sm:px-16 px-8'>
+            <div className='col-span-2 '>
                 <h2 className='pt-[100px]'> <span className='text-black'>About</span></h2>
-                <h2 className='py-2'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Charlie Lovett</span></h2>
+                <h1 className='py-2'> <span className='bg-gradient-to-r from-[#FFB939] to-[#f9ec5f] text-black'>Charlie Lovett</span></h1>
                 <p className='py-4 text-gray-600'>
                     This is a paragraph explaining who I am. How I got into programming,
                     where I am in school, my interests, hobbies, plans, and projects.
