@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 
 
-const ProjectItem = ({projUrl, title, description, icons, projImage}) => {
+const ProjectCard = ({projUrl, title, description, icons, projImage}) => {
     return (
         <Link href={projUrl}>
             <div className='relative flex flex-col items-left justify-center h-auto w-full rounded-xl p-4 scale-[.98] hover:scale-[1] hover:cursor-pointer transition-transform duration-100 border border-gray-300 group'>
@@ -28,4 +28,4 @@ const ProjectItem = ({projUrl, title, description, icons, projImage}) => {
             </Link>
     )
   }
-export default ProjectItem
+export default ProjectCard
