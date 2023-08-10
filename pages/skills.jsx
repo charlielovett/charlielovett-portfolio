@@ -1,7 +1,7 @@
 import React from 'react';
 import SkillItem from '@/components/SkillItem';
-import { AiFillHtml5 } from 'react-icons/ai';
-import { BiLogoCss3, BiLogoJavascript, BiLogoPython, BiLogoTailwindCss, BiLogoReact} from 'react-icons/bi';
+import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai';
+import { BiLogoCss3, BiLogoJavascript, BiLogoPython, BiLogoTailwindCss, BiLogoReact, BiLogoCPlusPlus} from 'react-icons/bi';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiRstudio } from 'react-icons/si';
 
@@ -11,10 +11,9 @@ import { SiRstudio } from 'react-icons/si';
 const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen'>
-        <div className='max-w-[1240px] mx-auto sm:px-16 px-8'>
+        <div className='max-w-[1240px] mx-auto px-8'>
             <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-cl-orange to-cl-yellow text-black'>Skills</span></h1>
-            <p className='py-4 text-gray-600'>What I can do.</p>
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 my-8'>
 
                 <SkillItem
                     skill='HTML'
@@ -40,6 +39,12 @@ const Skills = () => {
                 <SkillItem
                     skill='TailwindCSS'
                     skillIcon={<BiLogoTailwindCss size={50}/>}/>
+                <SkillItem
+                    skill='C'
+                    skillIcon={<BiLogoCPlusPlus size={50}/>}/>
+                <SkillItem
+                    skill='SQL'
+                    skillIcon={<AiOutlineConsoleSql size={50}/>}/>
 
             </div>
         </div>
