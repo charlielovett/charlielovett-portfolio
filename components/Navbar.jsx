@@ -85,14 +85,6 @@ const Navbar = () => {
                                 : 'ml-5 text-sm font-semibold hover:bg-cl-orange/25 ease-in duration-50'
                             }>About</li>
                     </Link>
-                    <Link href='/contact'>
-                        <li
-                            className={
-                                (highlight === 'contact')
-                                ? 'ml-5 text-sm font-semibold bg-gradient-to-r from-cl-orange to-cl-yellow'
-                                : 'ml-5 text-sm font-semibold hover:bg-cl-orange/25 ease-in duration-50'
-                            }>Contact</li>
-                    </Link>
                 </ul>
             </div>
         </div>

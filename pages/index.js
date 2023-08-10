@@ -1,9 +1,5 @@
 import Main from '@/components/Main'
 import Head from 'next/head'
-import Image from 'next/image'
-import About from '@/pages/about'
-import Skills from '@/pages/skills'
-import Contact from '@/pages/contact'
 
 export default function Home() {
   return (
