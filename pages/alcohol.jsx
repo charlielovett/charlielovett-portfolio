@@ -18,7 +18,7 @@ const alcohol = () => {
             <a
               href='/'
               target='_blank'
-              className='underline underline-offset-4 decoration-dotted text-gray-750 w-auto group hover:no-underline'>
+              className='text-gray-750 w-auto group'>
                 Repository
                 <div className='h-[2px] bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-300'></div>
               </a>
@@ -28,7 +28,7 @@ const alcohol = () => {
             <a
               href='/'
               target='_blank'
-              className='underline underline-offset-4 decoration-dotted text-gray-750 w-auto group hover:no-underline'>
+              className='text-gray-750 w-auto group'>
                 Presentation
                 <div className='h-[2px] bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-300'></div>
               </a>

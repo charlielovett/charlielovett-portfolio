@@ -23,7 +23,7 @@ const Projects = () => {
         <div className='max-w-[1240px] mx-auto sm:px-16 px-8'>
             <h1 className='pt-[100px]'> <span className='bg-gradient-to-r from-cl-orange to-cl-yellow text-black'>Projects</span></h1>
             <p className='py-4 text-gray-600'>Showcase of my work in software development and data analysis.</p>
-            <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+            <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8'>
               
               <ProjectCard
                 title='Effects of Alcoholism | Data Analysis'
