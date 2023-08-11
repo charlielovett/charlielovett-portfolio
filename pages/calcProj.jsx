@@ -27,7 +27,7 @@ const calcProj = () => {
         snippet='My very first project with HTML, CSS, and JavaScript.'
         links = {links}
         overview = {'For the most part, my school\'s computer science strays away from web development. '+
-                    'The exposure I\ve had to web development and the languages that revolve around it'+
+                    'The exposure I\'ve had to web development and the languages that revolve around it'+
                     'is very limited. Therefore, I taught myself HTML, CSS, and JavaScript in order to '+
                     'jumpstart my application development journey. After that, I needed a real project '+
                     'to continue to develop my skills, so I built a simple calculator.'}

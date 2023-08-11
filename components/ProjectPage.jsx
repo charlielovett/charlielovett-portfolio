@@ -6,12 +6,12 @@ const ProjectPage = ({image, title, snippet, links, overview, icons, bullets}) =
       <div className='max-w-[1240px] mx-auto p-8 pt-[80px] lg:px-[100px]'>
 
         <Image
-          className='pb-5'
+          className='m-5 lg:float-right lg:w-[500px] lg:h-[300px] border-[2px] border-black rounded-md'
           src={image}
           alt='/'
           />
         <div>
-            <h1>{title}</h1>
+            <h2>{title}</h2>
             <p className='py-2 text-gray-600 text-sm'>{snippet}</p>
 
         {/* Links */}
@@ -21,14 +21,15 @@ const ProjectPage = ({image, title, snippet, links, overview, icons, bullets}) =
                         <a
                         href={link.href}
                         target='_blank'
-                        className='text-gray-750 w-auto group flex items-center'>
+                        className='pr-3 text-gray-750 w-auto group flex items-center underline underline-offset-4 decoration-dotted cursor-pointer'>
                             {link.text}
-                            <div className='h-[2px] bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0
-                            group-hover:scale-x-100 transform origin-left ease-in duration-300'></div>
                         </a>
                         {index < links.length - 1 && (
-                            <div className='px-8 text-gray-750'>&bull;</div>
+                            <div className='text-gray-750'>|</div>
                         )}
+                        <div className='h-[2px] bg-gradient-to-r from-cl-orange to-cl-yellow'
+                            // scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-300
+                            ></div>
                     </React.Fragment>
                 ))}
             </div>
@@ -38,14 +39,14 @@ const ProjectPage = ({image, title, snippet, links, overview, icons, bullets}) =
                 {/* Overview */}
             <div className='flex flex-row'>
                 <div className='h-auto w-2 bg-gradient-to-b from-cl-orange to-cl-yellow'></div>
-                <h2 className='pl-2'>Overview</h2>
+                <h2 className='pl-2 text-2xl'>Overview</h2>
             </div>
             <p className='py-4 leading-8'>{overview}</p>
 
             {/* Technologies */}
             <div className='flex flex-row'>
                 <div className='h-auto w-2 bg-gradient-to-b from-cl-orange to-cl-yellow'></div>
-                <h2 className='pl-2'>Technologies</h2>
+                <h2 className='pl-2 text-2xl'>Technologies</h2>
             </div>
                 {/* Icons */}
             <div className='flex m-3'>
