@@ -17,15 +17,13 @@ const Navbar = () => {
         // sets nav highlights
         if (router.asPath === '/') {
             setHighlight('home')
-        } else if (router.asPath === '/projects') {
-            setHighlight('projects')
         } else if (router.asPath === '/skills') {
             setHighlight('skills')
         } else if (router.asPath === '/about') {
             setHighlight('about')
         } else if (router.asPath === '/contact') {
             setHighlight('contact')
-        } else if (router.asPath === '/alcohol') {
+        } else {
             setHighlight('projects')
         }
     }, [router])

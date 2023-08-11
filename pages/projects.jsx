@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 {/*images*/}
 import alcoholImg from '../public/assets/projects/303-2.png';
 import stemImg from '../public/assets/projects/303-3.png';
-import authImg from '../public/assets/projects/next-auth.png';
+import authImg from '../public/assets/projects/nextAuth.png';
 import calcImg from '../public/assets/projects/calc.png';
 
 
@@ -44,7 +44,7 @@ const Projects = () => {
                 description={'A simple Next.js app that uses Firebase to allow users to log in and view their private profile page.'}
                 projImage={authImg}
                 icons={[TbBrandNextjs, BiLogoFirebase]}
-                projUrl='/alcohol'
+                projUrl='/authProj'
                 />
               
               <ProjectCard
