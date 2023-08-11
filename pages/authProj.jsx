@@ -7,7 +7,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import { BiLogoFirebase } from 'react-icons/bi'
 
 const repoLink = 'https://github.com/charlielovett/nextjs-auth.git';
-const demoLink = '/';
+const demoLink = 'https://drive.google.com/file/d/1Tpv78J36yxRcjh_MF04fE2tds9DeDBMC/view?usp=sharing';
 
 const links = [
   { href: repoLink, text: 'Repository' },

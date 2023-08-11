@@ -5,8 +5,8 @@ import calcImg from '../public/assets/projects/calc.png';
 
 import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript } from 'react-icons/bi';
 
-const repoLink = 'https://github.com/charlielovett/Alcohol-Mortality-Model.git';
-const demoLink = '/';
+const repoLink = 'https://github.com/charlielovett/calculator-app.git';
+const demoLink = 'https://drive.google.com/file/d/13lEjJiYjmoHgDE8fd0uZdHr8wZxmTuSx/view?usp=sharing';
 
 const links = [
   { href: repoLink, text: 'Repository' },

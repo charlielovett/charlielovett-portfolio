@@ -15,7 +15,7 @@ const links = [
 ];
 
 const bulletItems = [
-  'Python: An easy-to-learn language for data science &#8212; countless libraries for data manipulation, cleaning, and analysis',
+  'Python: An easy-to-learn language for data science; countless libraries for data manipulation, cleaning, and analysis',
   'Pandas: A widely-used Python library built for data manipulation and analysis.',
   'NumPy: A Python library built for large, multidimensional arrays with many mathematical functions to operate on those arrays.',
   'Matplotlib and Seaborn: Python data visualization libraries.'
@@ -29,13 +29,14 @@ const alcohol = () => {
       snippet = {'A logistic regression model which assesses global alcohol-attributable ' +
         'mortality rates. Final project for STAT 303-2 at Northwestern University.'}
       links = {links}
-      overview = {'This project focuses on the development of a model to ' +
-                  'predict salaries in STEM fields. In this project, the optimization metric ' +
-                  'used was Mean Absolute Error. An MAE on testing data of ~47,000 was achieved '+
-                  'using the following models and ensembling techniques- Ridge, Lasso, Random ' +
-                  'Forest, AdaBoost, Gradient Boosting, and XGBoost. Based on this model, ' +
-                  'stakeholders including students and employers can more accurately predict ' +
-                  'salaries to correctly value work and avoid overcompensating employees.'}
+      overview = {'This project\’s goal was to build a model that will be able to '+
+                  'identify if a country is at a high risk for having too many deaths '+
+                  'attributable to alcohol (as a proportion of total deaths). We sought '+
+                  'to optimize the model\’s classification accuracy, along with its '+
+                  'false negative rate. To test the metrics, we 10-fold cross validation. '+
+                  'The final model was developed using forward selection with interactions '+
+                  'between some predictors. Check out the GitHub repository for a more '+
+                  'in-depth report of the project.'}
       icons = {[FaPython, SiPandas, SiNumpy]}
       bullets = {bulletItems}
       >
