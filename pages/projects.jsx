@@ -38,7 +38,7 @@ const Projects = () => {
                 description={'Prediction model using Ridge, Lasso, Random Forest, AdaBoost, Gradient Boost, and XGBoost. Final project for STAT 303-3 at Northwestern University.'}
                 projImage={stemImg}
                 icons={[FaPython, SiPandas, SiNumpy, SiScikitlearn]}
-                projUrl='/alcohol'
+                projUrl='/stem'
                 />
               
               <ProjectCard
