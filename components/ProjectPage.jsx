@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 
-const ProjectPage = ({image, title, snippet, links, repoLink, isPres, presLink, isDemo, demoLink, overview, icons, bullets}) => {
+const ProjectPage = ({image, title, snippet, links, overview, icons, bullets}) => {
   return (
-      <div className='max-w-[1240px] mx-auto p-8 pt-[50px] lg:px-[100px]'>
+      <div className='max-w-[1240px] mx-auto p-8 pt-[80px] lg:px-[100px]'>
 
         <Image
-          className=''
+          className='pb-5'
           src={image}
           alt='/'
           />
@@ -55,7 +55,7 @@ const ProjectPage = ({image, title, snippet, links, repoLink, isPres, presLink, 
                 </div>
                 {/* Bullet Points */}
             <div className='m-4 leading-8'>
-                <p>This model project uses a range of technologies, including:</p>
+                <p>This project uses the following technologies:</p>
                 <ul className="list-disc text-black ml-8 mt-4">
                     {bullets.map((item, index) => (
                         <li key={index}>{item}</li>

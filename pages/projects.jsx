@@ -25,7 +25,8 @@ const Projects = () => {
               
               <ProjectCard
                 title='Effects of Alcoholism | Data Analysis'
-                description={'A logistic regression model which assesses global alcohol-attributable mortality rates. Final project for STAT 303-2 at Northwestern University.'}
+                description={'A logistic regression model which assesses global alcohol-attributable mortality rates. '+
+                  'Final project for STAT 303-2 at Northwestern University.'}
                 projImage={alcoholImg}
                 icons={[FaPython, SiPandas, SiNumpy]}
                 projUrl='/alcohol'
@@ -33,7 +34,8 @@ const Projects = () => {
                 
               <ProjectCard
                 title='STEM Salaries | Data Analysis'
-                description={'Prediction model using Ridge, Lasso, Random Forest, AdaBoost, Gradient Boost, and XGBoost. Final project for STAT 303-3 at Northwestern University.'}
+                description={'Prediction model using Ridge, Lasso, Random Forest, AdaBoost, Gradient Boost, '+
+                    'and XGBoost. Final project for STAT 303-3 at Northwestern University.'}
                 projImage={stemImg}
                 icons={[FaPython, SiScikitlearn, SiPandas, SiNumpy]}
                 projUrl='/stem'
@@ -41,7 +43,7 @@ const Projects = () => {
               
               <ProjectCard
                 title='Next.js Authentication'
-                description={'A simple Next.js app that uses Firebase to allow users to log in and view their private profile page.'}
+                description='A simple Next.js app that uses Firebase to allow users to log in and view their private profile page.'
                 projImage={authImg}
                 icons={[TbBrandNextjs, BiLogoFirebase]}
                 projUrl='/authProj'
@@ -49,10 +51,10 @@ const Projects = () => {
               
               <ProjectCard
                 title='Calculator App'
-                description={'My very first project with HTML, CSS, and JavaScript'}
+                description='My very first project with HTML, CSS, and JavaScript.'
                 projImage={calcImg}
                 icons={[BiLogoHtml5, BiLogoCss3, BiLogoJavascript]}
-                projUrl='/alcohol'
+                projUrl='/calcProj'
                 />
 
             </div>
