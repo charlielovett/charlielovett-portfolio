@@ -48,7 +48,9 @@ const Main = () => {
             target='_blank'
             className='absolute font-semibold left-4 bottom-4 group'>
                 Source Code
-                <div className='w-full h-[2px] bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0 group-hover:scale-x-100 transform origin-left ease-in duration-100'></div>
+                <div
+                className='w-full h-[2px] bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0
+                group-hover:scale-x-100 transform origin-left ease-in duration-100'></div>
         </a>
     </div>
   )
