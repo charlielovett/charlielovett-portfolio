@@ -1,8 +1,9 @@
 import React from 'react';
+import ProjectPage from '@/components/ProjectPage';
+
 import alcImg from '../public/assets/projects/303-2.png';
 import { FaPython } from 'react-icons/fa';
 import { SiPandas, SiNumpy} from 'react-icons/si';
-import ProjectPage from '@/components/ProjectPage';
 
 const repoLink = 'https://github.com/charlielovett/Alcohol-Mortality-Model.git';
 const presLink = 'https://docs.google.com/presentation/d/e/2PACX-1vQA_P3N8A9SAr6l1HHQQk4sHpgTId-OXeEey16nM3CJhfdDpOGtapUhHalYw04-TtfaKsf2eRacolVR/pub?start=false&loop=false&delayms=3000';

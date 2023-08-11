@@ -10,9 +10,7 @@ import calcImg from '../public/assets/projects/calc.png';
 
 {/*icons*/}
 import { FaPython } from 'react-icons/fa';
-import { SiPandas } from 'react-icons/si';
-import { SiNumpy } from 'react-icons/si';
-import { SiScikitlearn } from 'react-icons/si';
+import { SiPandas, SiNumpy, SiScikitlearn } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { BiLogoFirebase, BiLogoHtml5, BiLogoCss3, BiLogoJavascript } from 'react-icons/bi';
 
@@ -37,7 +35,7 @@ const Projects = () => {
                 title='STEM Salaries | Data Analysis'
                 description={'Prediction model using Ridge, Lasso, Random Forest, AdaBoost, Gradient Boost, and XGBoost. Final project for STAT 303-3 at Northwestern University.'}
                 projImage={stemImg}
-                icons={[FaPython, SiPandas, SiNumpy, SiScikitlearn]}
+                icons={[FaPython, SiScikitlearn, SiPandas, SiNumpy]}
                 projUrl='/stem'
                 />
               
