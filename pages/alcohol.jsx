@@ -33,7 +33,7 @@ const alcohol = () => {
                   'identify if a country is at a high risk for having too many deaths '+
                   'attributable to alcohol (as a proportion of total deaths). We sought '+
                   'to optimize the model\’s classification accuracy, along with its '+
-                  'false negative rate. To test the metrics, we 10-fold cross validation. '+
+                  'false negative rate. To test the metrics, we used 10-fold cross validation. '+
                   'The final model was developed using forward selection with interactions '+
                   'between some predictors. Check out the GitHub repository for a more '+
                   'in-depth report of the project.'}

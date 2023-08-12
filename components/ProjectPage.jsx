@@ -59,7 +59,9 @@ const ProjectPage = ({image, title, snippet, links, overview, icons, bullets}) =
                 <p>This project uses the following technologies:</p>
                 <ul className="list-disc text-black ml-8 mt-4">
                     {bullets.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li
+                            className='cursor-default'
+                            key={index}>{item}</li>
                         ))}
                     </ul>
             </div>
