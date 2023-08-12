@@ -12,7 +12,7 @@ const About = () => {
             <div className='mt-4 mb-8'>
                 <Image
                     className='float-right ml-6 w-40 md:w-72 rounded-md'
-                    src='/../public/aboutMe.png'
+                    src='/../public/projects/aboutMe.png'
                     width='1500'
                     height='1695'
                     alt=''
