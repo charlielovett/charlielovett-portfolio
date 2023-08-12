@@ -2,10 +2,10 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 
 {/*images*/}
-import alcoholImg from '../public/assets/projects/303-2.png';
-import stemImg from '../public/assets/projects/303-3.png';
-import authImg from '../public/assets/projects/nextAuth.png';
-import calcImg from '../public/assets/projects/calc.png';
+import alcoholImg from '../public/projects/303-2.png';
+import stemImg from '../public/projects/303-3.png';
+import authImg from '../public/projects/nextAuth.png';
+import calcImg from '../public/projects/calc.png';
 
 
 {/*icons*/}

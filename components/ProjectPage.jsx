@@ -21,7 +21,7 @@ const ProjectPage = ({image, title, snippet, links, overview, icons, bullets}) =
                         <a
                         href={link.href}
                         target='_blank'
-                        className='pr-3 text-gray-750 w-auto group flex items-center underline underline-offset-4 decoration-dotted cursor-pointer'>
+                        className='pr-3 w-auto group flex items-center font-semibold text-gray-800 underline cursor-pointer'>
                             {link.text}
                         </a>
                         {index < links.length - 1 && (

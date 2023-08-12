@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectPage from '@/components/ProjectPage';
 
-import calcImg from '../public/assets/projects/calc.png';
+import calcImg from '../public/projects/calc.png';
 
 import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript } from 'react-icons/bi';
 

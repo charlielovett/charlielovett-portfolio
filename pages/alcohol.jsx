@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectPage from '@/components/ProjectPage';
 
-import alcImg from '../public/assets/projects/303-2.png';
+import alcImg from '../public/projects/303-2.png';
 
 import { FaPython } from 'react-icons/fa';
 import { SiPandas, SiNumpy} from 'react-icons/si';

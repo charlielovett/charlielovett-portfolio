@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectPage from '@/components/ProjectPage';
 
-import authImg from '../public/assets/projects/nextAuth.png';
+import authImg from '../public/projects/nextAuth.png';
 
 import { TbBrandNextjs } from 'react-icons/tb';
 import { BiLogoFirebase } from 'react-icons/bi'

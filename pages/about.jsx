@@ -12,7 +12,7 @@ const About = () => {
             <div className='mt-4 mb-8'>
                 <Image
                     className='float-right ml-6 w-40 md:w-72 rounded-md'
-                    src='/../public/assets/about-me.png'
+                    src='/../public/aboutMe.png'
                     width='1500'
                     height='1695'
                     alt='Photo of me'
@@ -42,7 +42,7 @@ const About = () => {
                     </p>
                     <br />
                     <p className='text-gray-600 leading-8'>
-                    If you would like to know more about me, please feel free to check out my &nbsp;
+                    If you would like to know more about me, please feel free to check out my&nbsp;
                     <a
                         className='font-semibold text-gray-800 underline'
                         href={linkedInLink}

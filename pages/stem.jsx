@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectPage from '@/components/ProjectPage';
 
-import stemImg from '../public/assets/projects/303-3.png';
+import stemImg from '../public/projects/303-3.png';
 
 import { FaPython } from 'react-icons/fa';
 import { SiPandas, SiNumpy, SiScikitlearn } from 'react-icons/si';
