@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import aboutImg from '../public/aboutMe.png';
 
 const linkedInLink = 'https://linkedin.com/in/charlie-lovett';
 const gitHubLink = 'https://github.com/charlielovett';
+
 
 const About = () => {
     return (
@@ -12,10 +14,8 @@ const About = () => {
             <div className='mt-4 mb-8'>
                 <Image
                     className='float-right ml-6 w-40 md:w-72 rounded-md'
-                    src='/../public/aboutMe.png'
-                    width='300'
-                    height='500'
-                    alt=''
+                    src={aboutImg}
+                    alt='Photo of Me'
                 />
                 <article>
                     <p className='text-gray-600 leading-8'>
