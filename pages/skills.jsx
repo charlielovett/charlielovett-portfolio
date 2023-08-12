@@ -40,7 +40,7 @@ const Skills = () => {
                     skill='TailwindCSS'
                     skillIcon={<BiLogoTailwindCss size={50}/>}/>
                 <SkillItem
-                    skill='C'
+                    skill='C++'
                     skillIcon={<BiLogoCPlusPlus size={50}/>}/>
                 <SkillItem
                     skill='SQL'
