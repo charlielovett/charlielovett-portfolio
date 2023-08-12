@@ -13,10 +13,9 @@ const About = () => {
                 <Image
                     className='float-right ml-6 w-40 md:w-72 rounded-md'
                     src='/../public/aboutMe.png'
-                    width='1500'
-                    height='1695'
+                    width='300'
+                    height='500'
                     alt=''
-                    preview={false}
                 />
                 <article>
                     <p className='text-gray-600 leading-8'>
