@@ -15,7 +15,7 @@ const About = () => {
                     src='/../public/aboutMe.png'
                     width='1500'
                     height='1695'
-                    alt='Photo of me'
+                    alt=''
                     preview={false}
                 />
                 <article>
