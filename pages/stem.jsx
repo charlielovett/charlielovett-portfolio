@@ -32,7 +32,7 @@ const stem = () => {
       overview = {'This project focuses on the development of a model to ' +
                   'predict salaries in STEM fields. In this project, the optimization metric '+
                   'used was Mean Absolute Error. An MAE on testing data of ~$47,000 was achieved '+
-                  'using the following models and ensembling techniques- Ridge, Lasso, Random '+
+                  'using the following models and ensembling techniques: Ridge, Lasso, Random '+
                   'Forest, AdaBoost, Gradient Boosting, and XGBoost. Based on this model, '+
                   'stakeholders including students and employers can more accurately predict '+
                   'salaries to correctly value work and avoid overcompensating employees'}

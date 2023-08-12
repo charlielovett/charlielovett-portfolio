@@ -6,7 +6,7 @@ const ProjectPage = ({image, title, snippet, links, overview, icons, bullets}) =
       <div className='max-w-[1240px] mx-auto p-8 pt-[80px] lg:px-[100px]'>
 
         <Image
-          className='m-5 lg:float-right lg:w-[500px] lg:h-[300px] border-[2px] border-black rounded-md'
+          className='mb-5 lg:ml-5 lg:float-right lg:w-[500px] lg:h-[300px] border-[2px] border-black rounded-md'
           src={image}
           alt='/'
           />
