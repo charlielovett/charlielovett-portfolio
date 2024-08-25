@@ -19,25 +19,23 @@ const About = () => {
                 />
                 <article>
                     <p className='text-gray-600 leading-8'>
-                    Hi! My name is Charlie Lovett. I am a Junior at Northwestern University studying
+                    Hi! My name is Charlie Lovett. I am a Senior at Northwestern University studying
                     computer science and data science. My programming journey began in my freshman year:
                     I decided to take an intro CS class, and I immediately fell in love with the subject.
                     </p>
                     <br/>
                     <p className='text-gray-600 leading-8'>
-                    In my sophomore year, I worked with the tech and analysis committee of the Norhtwestern
-                    University Dance Marathon to develop the mobile app for the annual fundraiser. I was exposed
-                    to app development with React Native by working with my peers to optimize continuous integration
-                    and development for the app. I also realized that there was so much I didn&#39;t know about the vast
-                    field of computer science, so I was eager to broaden my horizons. Recently, I taught myself HTML, CSS, and JavaScript, three essential technologies for web
-                    development. I also explored Next.js and Tailwind CSS by creating this website from scratch.
+                    During my sophomore year, I collaborated with the Tech and Analysis Committee of the Northwestern University
+                    Dance Marathon team to develop a mobile app for their annual fundraiser. This experience introduced me to app
+                    development using React Native, and it made me realize just how much there is to learn in the expansive field
+                    of computer science. Building this website with Next.js was my first solo programming project outside of school
+                    or extracurricular activities. The freedom to create something on my own and learn independently deepened my passion
+                    for software development.
                     </p>
                     <br/>
                     <p className='text-gray-600 leading-8'>
-                    Now, I am in the process of developing a web application that will manage and track on-campus
-                    events at universities. This site will be a comprehensive and centralized bulletin board platform
-                    where clubs organizations can promote their events and students can be exposed to opportunities that they
-                    would have otherwise overlooked.
+                    Since then, through both internship experiences and personal projects, I have developed a solid foundation
+                    in frontend software development, utilizing popular technologies such as Vue.js, TypeScript, and Tailwind CSS.
                     </p>
                     <br />
                     <p className='text-gray-600 leading-8'>
