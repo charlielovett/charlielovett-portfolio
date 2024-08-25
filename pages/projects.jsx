@@ -1,14 +1,14 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 
-{/*images*/}
+/*images*/
 import alcoholImg from '../public/projects/303-2.png';
 import stemImg from '../public/projects/303-3.png';
 import authImg from '../public/projects/nextAuth.png';
 import calcImg from '../public/projects/calc.png';
 
 
-{/*icons*/}
+/*icons*/
 import { FaPython } from 'react-icons/fa';
 import { SiPandas, SiNumpy, SiScikitlearn } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
