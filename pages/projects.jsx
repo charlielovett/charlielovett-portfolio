@@ -47,7 +47,7 @@ const Projects = () => {
               'and XGBoost. Final project for STAT 303-3 at Northwestern University.'}
             projImage={stemImg}
             icons={[FaPython, SiScikitlearn, SiPandas, SiNumpy]}
-            projUrl='/stem'
+            projUrl='/stemProj'
           />
 
           <ProjectCard
