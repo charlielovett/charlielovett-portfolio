@@ -22,10 +22,10 @@ const Main = () => {
 
         // Clean up the event listener
         return () => {
-        window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
-    
+
     return (
         <div id='home' className='w-full h-screen text-center'>
             <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
@@ -37,26 +37,24 @@ const Main = () => {
                         A Student and Software Developer
                     </h1>
                     <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                        I am a student at Northwestern University studying 
-                        computer science and data science. Currently, I am 
-                        focused on expanding my programming skillset while 
-                        building a responsive web application which will manage 
-                        and track events on Northwestern&#39;s campus.
+                        I'm Charlie, a senior at Northwestern University studying computer science
+                        and data science. I’m passionate about developing software that makes an impact,
+                        whether through intuitive user experiences or scalable, data-driven solutions.
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                         <a href={linkedInLink} target='_blank'>
                             <div className='rounded-full ring-4 ring-cl-orange m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <FaLinkedinIn size={20}/>
+                                <FaLinkedinIn size={20} />
                             </div>
                         </a>
                         <a href={gitHubLink} target='_blank'>
                             <div className='rounded-full ring-4 ring-cl-orange m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <FaGithub size={20}/>
+                                <FaGithub size={20} />
                             </div>
-                        </a > 
+                        </a >
                         <a href='mailto:colovett@gmail.com' target='_blank'>
                             <div className='rounded-full ring-4 ring-cl-orange m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <AiOutlineMail size={20}/>
+                                <AiOutlineMail size={20} />
                             </div>
                         </a>
                     </div>
@@ -68,17 +66,17 @@ const Main = () => {
                 className='absolute font-semibold left-4 bottom-4 group'>
                 {smallScreen ? (
                     <TbSourceCode size={30}></TbSourceCode>
-                    ) : (
-                        <>
+                ) : (
+                    <>
                         Source Code
                         <div
                             className='w-full h-[2px] bg-gradient-to-r from-cl-orange to-cl-yellow scale-x-0
                             group-hover:scale-x-100 transform origin-left ease-in duration-100'></div>
-                        </>
+                    </>
                 )}
-                </a>
-            </div>
-  )
+            </a>
+        </div>
+    )
 }
 
 export default Main
