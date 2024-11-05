@@ -19,6 +19,10 @@ const bulletItems = [
   'Firebase: Authentication is one of many backend services that Google\'s Firebase has available.'
 ];
 
+const overview = `As preparation for building more sophisticated web applications with Next.js 
+I wanted to familiarize myself with authorization. This very simple app allows users to log into 
+their account with Google.`
+
 const authProj = () => {
   return (
     <ProjectPage
@@ -26,9 +30,7 @@ const authProj = () => {
         title='Next.js Authentication'
         snippet = 'A simple Next.js app that uses Firebase to allow users to log in and view their private profile page.'
         links = {links}
-        overview = {'As preparation for building more sophisticated web applications with Next.js I wanted '+
-                    'to familiarize myself with authorization. This very simple app allows users to log into '+
-                    'their account with Google.'}
+        overview = {overview}
         icons = {[TbBrandNextjs, BiLogoFirebase]}
         bullets = {bulletItems}
       >

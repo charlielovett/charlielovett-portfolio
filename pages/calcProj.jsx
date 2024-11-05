@@ -19,21 +19,23 @@ const bulletItems = [
   'JavaScript: One of the core technologies of the internet. 98.7% of websites use JavaScript on the client side for webpage behavior.',
 ];
 
+const overview = `For the most part, my school's computer science strays away from 
+web development. The exposure I've had to web development and the languages that revolve 
+around it is very limited. Therefore, I taught myself HTML, CSS, and JavaScript in order 
+to jumpstart my application development journey. After that, I needed a real project 
+to continue to develop my skills, so I built a simple calculator.`
+
 const calcProj = () => {
   return (
     <ProjectPage
-        image = {calcImg}
-        title = 'Calculator App'
-        snippet='My very first project with HTML, CSS, and JavaScript.'
-        links = {links}
-        overview = {'For the most part, my school\'s computer science strays away from web development. '+
-                    'The exposure I\'ve had to web development and the languages that revolve around it '+
-                    'is very limited. Therefore, I taught myself HTML, CSS, and JavaScript in order to '+
-                    'jumpstart my application development journey. After that, I needed a real project '+
-                    'to continue to develop my skills, so I built a simple calculator.'}
-        icons={[BiLogoHtml5, BiLogoCss3, BiLogoJavascript]}
-        bullets = {bulletItems}
-      >
+      image={calcImg}
+      title='Calculator App'
+      snippet='My very first project with HTML, CSS, and JavaScript.'
+      links={links}
+      overview={overview}
+      icons={[BiLogoHtml5, BiLogoCss3, BiLogoJavascript]}
+      bullets={bulletItems}
+    >
 
     </ProjectPage>
   )

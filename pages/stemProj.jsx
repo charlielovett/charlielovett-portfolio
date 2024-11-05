@@ -22,23 +22,24 @@ const bulletItems = [
   'Matplotlib and Seaborn: Python data visualization libraries.'
 ];
 
+const overview = `This project focuses on the development of a model to 
+predict salaries in STEM fields. In this project, the optimization metric 
+used was Mean Absolute Error. We leveraged the following models and ensembling 
+techniques: Ridge, Lasso, Random Forest, AdaBoost, Gradient Boosting, and XGBoost. 
+Based on this model, stakeholders including students and employers can more accurately 
+predict salaries to correctly value work and avoid overcompensating employees.`
+
 const stem = () => {
   return (
     <ProjectPage
-      image = {stemImg}
-      title = 'STEM Salary Model'
-      snippet = {'An ensemble of models which predict employee salaries in STEM fields based on a variety of predictors.'}
-      links = {links}
-      overview = {'This project focuses on the development of a model to ' +
-                  'predict salaries in STEM fields. In this project, the optimization metric '+
-                  'used was Mean Absolute Error. An MAE on testing data of ~$47,000 was achieved '+
-                  'using the following models and ensembling techniques: Ridge, Lasso, Random '+
-                  'Forest, AdaBoost, Gradient Boosting, and XGBoost. Based on this model, '+
-                  'stakeholders including students and employers can more accurately predict '+
-                  'salaries to correctly value work and avoid overcompensating employees'}
-      icons = {[FaPython, SiScikitlearn, SiPandas, SiNumpy]}
-      bullets = {bulletItems}
-      >
+      image={stemImg}
+      title='STEM Salary Model'
+      snippet={'An ensemble of models which predict employee salaries in STEM fields based on a variety of predictors.'}
+      links={links}
+      overview={overview}
+      icons={[FaPython, SiScikitlearn, SiPandas, SiNumpy]}
+      bullets={bulletItems}
+    >
 
     </ProjectPage>
   )
