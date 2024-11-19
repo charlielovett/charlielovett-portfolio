@@ -6,7 +6,7 @@ import bashImg from '../public/projects/bashEx.png';
 import { SiGnubash } from 'react-icons/si';
 
 const repoLink = 'https://github.com/charlielovett/bash-schedules.git';
-const presLink = '';
+const presLink = 'https://drive.google.com/file/d/1uynG8-C69H_4L1ANLJ02PGOxowc3Oo7C/view?usp=sharing';
 
 const links = [
     { href: repoLink, text: 'Repository' },
