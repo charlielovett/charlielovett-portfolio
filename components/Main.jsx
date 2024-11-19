@@ -37,8 +37,8 @@ const Main = () => {
                         A Student and Software Developer
                     </h1>
                     <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                        I'm Charlie, a senior at Northwestern University studying computer science
-                        and data science. I’m passionate about developing software that makes an impact,
+                        I&#39;m Charlie, a senior at Northwestern University studying computer science
+                        and data science. I&#39;m passionate about developing software that makes an impact,
                         whether through intuitive user experiences or scalable, data-driven solutions.
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
